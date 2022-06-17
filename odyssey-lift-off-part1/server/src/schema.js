@@ -15,7 +15,7 @@ type Track {
   author: Author!
   thumbnail: String
   length: Int
-  moduleCount: Int
+  modulesCount: Int
 }
 
 "Author of a track or a module"
