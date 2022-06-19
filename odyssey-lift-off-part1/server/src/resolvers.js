@@ -1,18 +1,17 @@
+
 const resolvers = {
   Query: {
-    // returns an array of tracks which will be used to populate
-    // the home page grid of our web client
+    // get all tracks, will be used to populate the homepage grid of our web client
     tracksForHome: (_, __, {dataSources}) => {
-      return dataSources.trackAPI.getTracksFromHome();
-    },
+      return dataSources.trackAPI.getTracksForHome();
+    }
   },
-
   Track: {
     author: ({authorId}, _, {dataSources}) => {
       return dataSources.trackAPI.getAuthor(authorId);
-    },
-  },
-}
+    }
+  }
+};
 
 
 module.exports = resolvers;
