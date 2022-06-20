@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {gql, useQuery} from '@apollo/client';
 import {Layout, QueryResult} from '../components';
 import TrackDetail from '../components/track-detail';
