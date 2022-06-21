@@ -13,13 +13,13 @@ type Mutation {
 }
 
 type IncrementTrackViewsResponse {
-  "like HTTP status code, shows the status of the mutation"
+  "Similar to HTTP status code, represents the status of the mutation"
   code: Int!
-  "indicates whether the mutation was successful"
+  "Indicates whether the mutation was successful"
   success: Boolean!
-  "human readable message for the ui
+  "Human-readable message for the UI"
   message: String!
-  "newly updated track"
+  "Newly updated track after a successful mutation"
   track: Track
 }
 
