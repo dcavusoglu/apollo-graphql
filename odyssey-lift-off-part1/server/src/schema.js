@@ -8,6 +8,21 @@ type Query {
   track(id: ID!): Track
 }
 
+type Mutation {
+  incrementTrackViews(id: ID!): IncrementTrackViewsResponse!
+}
+
+type IncrementTrackViewsResponse {
+  "like HTTP status code, shows the status of the mutation"
+  code: Int!
+  "indicates whether the mutation was successful"
+  success: Boolean!
+  "human readable message for the ui
+  message: String!
+  "newly updated track"
+  track: Track
+}
+
 "A track is a group of mudules teaching about a specific topic"
 
 type Track {
